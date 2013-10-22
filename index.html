@@ -1,0 +1,626 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+	<title>CSS Sample</title>
+	<script src="jquery-1.10.2.js"></script>
+	<script src="js-jquery.js"></script>
+	<script type="text/javascript">
+	function disp(object){
+		var box=document.getElementById(object);
+		box.style.display="inline-block"
+	}
+	</script>
+	<link rel="icon" type="image/png" href="http://icons.iconarchive.com/icons/chromatix/aerial/128/web-icon.png">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="baseclass.css">
+</head>
+<body>
+	<div class="main-popup"></div>
+	<div class="popup-body"> 
+		<div id="popup-title">
+			Hey, you've stumbled upon a popup!
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+			<a href="#breadcrumbs"><li>Breadcrumbs</li></a>
+			<a href="#badges"><li>Badges</li></a>
+			<a href="#menus"><li>Menus</li></a>
+			<a href="#input"><li>Input</li></a>
+			<a href="#buttons"><li>Buttons</li></a>
+			<a href="#lists"><li>Lists</li></a>
+			<a href="#typography"><li>Typography</li></a>
+			<a href="#tables"><li>Tables</li></a>
+			<a href="#hr"><li>HR Lines</li></a>
+			<a href="#animations"><li>Animations</li></a>
+			<a href="#alerts"><li>Alerts</li></a>
+			<a href="#images"><li>Images</li></a>
+			<a href="#progress"><li>Progress Bar</li></a>
+			<a href="#social"><li>Social Icons</li></a>
+		</ul>
+	</div>
+	<a name="top" id="top"></a>
+	<a href="#top" class="top-go"><div class="go-top" class="user-select-none">Back To Top</div></a>
+	<div id="header">
+		<div id="header-contents">
+			Showcase
+		</div>
+		<div id="header-contents-menu">
+			An Alternative To Twitter's Bootstrap
+		</div>
+	</div>
+	<div id="contents" class="user-select-none">
+
+		<p class="title" id="breadcrumbs">Breadcrumbs</p>
+		<p class="sub-title">Simple breadcrumb designs</p>
+		<ol>
+			<li>Simple<br>
+				<ul class="breadcrumbs-simple">
+					<li><a href="">Home</a></li>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<a href="">Link 3</a>
+				</ul>
+			</li><br>
+			<li>Simple Colored<br>
+				<ul class="breadcrumbs-simple-colored">
+					<li><a href="">Home</a></li>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<a href="" name="current">Link 3</a>
+				</ul>
+			</li><br>
+			<li>Simple Colored Line Separator<br>
+				<ul class="breadcrumbs-simple-colored-line">
+					<li><a href="">Home</a></li>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<a href="" name="current">Link 3</a>
+				</ul>
+			</li><br>
+			<li>Standard<br>
+				<ul class="breadcrumbs-standard">
+					<li><a href="">Home</a></li>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<a href="">Link 3</a>
+				</ul>
+			</li><br>
+			<li>White Style<br>
+				<ul class="breadcrumb-menu-style b-white">
+					<li><a href="#"><img src="files/button_icons_black/monitor32.png"></a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Directory</a></li>
+					<li><a href="#">Pages</a></li>
+					<li>Current page</li>
+				</ul>
+			</li><br>
+			<li>Black Style<br>
+				<ul class="breadcrumb-menu-style b-black">
+					<li><a href="#"><img src="files/button_icons/boxs-view.png"></a></li>
+					<li><a href="#"><img src="files/button_icons/star.png"> Home</a></li>
+					<li><a href="#"><img src="files/button_icons/iphone.png"> iPhone</a></li>
+					<li><img src="files/button_icons/doc.png">Features</li>
+				</ul>
+			</li><br>
+			<li>Blue Style<br>
+				<ul class="breadcrumb-menu-style b-blue">
+					<li><a href="#"><img src="files/button_icons/refresh.png"></a></li>
+					<li><a href="#"><img src="files/button_icons/star.png"> Home</a></li>
+					<li><a href="#"><img src="files/button_icons/pencil.png"> Write</a></li>
+					<li><img src="files/button_icons/comment.png">Comments</li>
+				</ul>
+			</li><br>
+		</ol>
+		<hr class="hr-full">
+		<p class="title" id="badges">Badges</p>
+		<p class="sub-title">Simple Badges</p>
+		<p> Inbox <span class="badge-notifications grey">1</span></p>
+		<p> Messages <span class="badge-notifications red">10</span></p>
+		<p> Notifications <span class="badge-notifications blue">100</span></p>
+		<p> News Feed <span class="badge-notifications green">1000</span></p>
+		<hr class="hr-full">
+		<p class="title" id="menus">Menus</p>
+		<p class="sub-title">A range of menus</p>
+		<ol>
+			<li> Simple<br>
+				<ul class="menu-basic">
+					<a href=""><li>Item 1</li></a>
+					<li class="disabled">Item 2</li>
+					<hr>
+					<a href=""><li>Item 3</li></a>
+					<a href=""><li>Item 4</li></a>
+					<a href=""><li>Item 5</li></a>
+				</ul>
+			</li><br>
+			<li> Simple Transitioned<br>
+				<ul class="menu-basic transitioned">
+					<a href=""><li>Item 1</li></a>
+					<li class="disabled">Item 2</li>
+					<hr>
+					<a href=""><li>Item 3</li></a>
+					<a href=""><li>Item 4</li></a>
+					<a href=""><li>Item 5</li></a>
+				</ul>
+			</li><br>
+			<li> Simple Rounded<br>
+				<ul class="menu-basic rounded">
+					<a href=""><li class="first">Item 1</li></a>
+					<li class="disabled">Item 2</li>
+					<hr>
+					<a href=""><li>Item 3</li></a>
+					<a href=""><li>Item 4</li></a>
+					<a href=""><li class="last">Item 5 </li></a>
+				</ul>
+			</li><br>
+			<li> Combined Simple<br>
+				<ul class="menu-basic menu-combined">
+					<a href=""><li class="first">Item 1</li></a>
+					<li class="disabled">Item 2</li>
+					<a href=""><li>Item 3</li></a>
+					<a href=""><li>Item 4</li></a>
+					<a href=""><li class="last">Item 5</li></a>
+				</ul>
+			</li><br>
+			<li> Combined Transitioned<br>
+				<ul class="menu-basic menu-combined transitioned">
+					<a href=""><li class="first">Twitter <img src="files/social_icons/twitter.png"></li></a>
+					<li class="disabled">Delicious <img src="files/social_icons/delicious.png"></li>
+					<a href=""><li>Facebook <img src="files/social_icons/facebook.png"></li></a>
+					<a href=""><li>Tumblr <img src="files/social_icons/tumblr.png"></li></a>
+					<a href=""><li class="last">Digg <img src="files/social_icons/digg.png"></li></a>
+				</ul>
+			</li><br>
+		</ol>
+		<hr class="hr-full">
+		<p class="title"  id="input">Input</p>
+		<p class="sub-title">A range of input designs</p>
+		<ol>
+			<li>Blue Hover<br>
+				<form class="input-inline-blue box-center">
+					<input type="text" placeholder="Name"/>
+					<input type="password" placeholder="Password"/>
+					<input type="email" placeholder="E-mail"/>
+				</form>
+			</li>
+			<br>
+			<li>Green hover<br>
+				<form class="input-inline-green box-center">
+					<input type="text" placeholder="Name"/>
+					<input type="password" placeholder="Password"/>
+					<input type="number" placeholder="1" min="1" max="5"/>
+
+				</form>
+			</li>
+			<br>
+			<li>Red hover<br>
+				<form class="input-inline-red box-center">
+					<input type="text" placeholder="Name"/>
+					<input type="password" placeholder="Password"/>
+					<input type="date"/>
+				</form>
+			</li>
+			<br>
+			<li>Input Types<br><br>
+				<ol>
+					<li>Checkbox<br>
+						<input id="d_box_1" class="css-checkbox" type="checkbox" />
+						<label for="d_box_1" class="checkbox-elegant">Checkbox Option 1</label><br>
+						<input id="d_box_2" class="css-checkbox" type="checkbox" />
+						<label for="d_box_2" class="checkbox-depressed">Checkbox Option 2</label><br>
+						<input id="d_box_3" class="css-checkbox" type="checkbox" />
+						<label for="d_box_3" class="checkbox-dark-green">Checkbox Option 3</label><br>
+						<input id="d_box_4" class="css-checkbox" type="checkbox" />
+						<label for="d_box_4" class="checkbox-lite-blue">Checkbox Option 4</label><br>
+						<input id="d_box_5" class="css-checkbox" type="checkbox" />
+						<label for="d_box_5" class="checkbox-lite-grey">Checkbox Option 5</label><br>
+					</li><br>
+					<li>Radio Button<br>
+						<input id="r_box_1" name="option1" class="css-checkbox" type="radio" />
+						<label for="r_box_1" class="radio-lite-plus">Radio Option 1</label><br>
+						<input id="r_box_2" name="option1" class="css-checkbox" type="radio" />
+						<label for="r_box_2" class="radio-lite-plus">Radio Option 2</label><br><br>
+						<input id="r_box_3" name="option2" class="css-checkbox" type="radio" />
+						<label for="r_box_3" class="radio-dark-plus">Radio Option 1</label><br>
+						<input id="r_box_4" name="option2" class="css-checkbox" type="radio" />
+						<label for="r_box_4" class="radio-dark-plus">Radio Option 2</label><br><br>
+						<input id="r_box_5" name="option3" class="css-checkbox" type="radio" />
+						<label for="r_box_5" class="radio-lite-x-grey">Radio Option 1</label><br>
+						<input id="r_box_6" name="option3" class="css-checkbox" type="radio" />
+						<label for="r_box_6" class="radio-lite-x-grey">Radio Option 2</label><br><br>
+					</li>
+					<li>Number Range<br>
+						<ol>
+							<li>Type 1<br>
+								<div class="input-range-1 range-green">
+									<input type="range"	min="0" max="100" step="1" value="0">
+								</div>
+								<div class="input-range-1 range-blue">
+									<input type="range"	min="0" max="100" step="10" value="0">
+								</div>
+								<div class="input-range-1 range-red">
+									<input type="range"	min="0" max="100" step="20" value="0">
+								</div>
+								<div class="input-range-1 range-black">
+									<input type="range"	min="0" max="100" step="25" value="0">
+								</div>
+							</li><br>
+							<li>Type 2<br>
+								<div class="input-range-2 range-green">
+									<input type="range"	min="0" max="100" step="1" value="0">
+								</div>
+								<div class="input-range-2 range-blue">
+									<input type="range"	min="0" max="100" step="10" value="0">
+								</div>
+								<div class="input-range-2 range-red">
+									<input type="range"	min="0" max="100" step="20" value="0">
+								</div>
+								<div class="input-range-2 range-black">
+									<input type="range"	min="0" max="100" step="25" value="0">
+								</div>
+							</li><br>
+							<li>Type 3<br>
+								<div class="input-range-3 range-green">
+									<input type="range"	min="0" max="100" step="1" value="0">
+								</div>
+								<div class="input-range-3 range-blue">
+									<input type="range"	min="0" max="100" step="10" value="0">
+								</div>
+								<div class="input-range-3 range-red">
+									<input type="range"	min="0" max="100" step="20" value="0">
+								</div>
+								<div class="input-range-3 range-white">
+									<input type="range"	min="0" max="100" step="25" value="0">
+								</div>
+							</li><br>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		<br>
+		<hr class="hr-full">
+		<p class="title" id="buttons">Buttons</p>
+		<p class="sub-title">A range of button designs</p>
+		<button class="submit-box s-white"> White </button>
+		<button class="submit-box s-blue"> Blue </button>
+		<button class="submit-box s-orange"> Orange </button>
+		<button class="submit-box s-green"> Green </button>
+		<button class="submit-box s-red"> Red </button>
+		<br><br>
+		<button class="submit-box-image s-green"> <img src="files/button_icons/thumbs-up.png"> Up </button>
+		<button class="submit-box-image s-red"> <img src="files/button_icons/thumbs-down.png"> Down </button>
+		<button class="submit-box-image s-blue"> <img src="files/button_icons/mac.png"> Mac </button>
+		<button class="submit-box-image s-orange"> <img src="files/button_icons/boxs-view.png"> Apps </button>
+		<button class="submit-box-image s-purple"> <img src="files/button_icons/mail.png"> Mail </button>
+		<br><br>
+		<button class="submit-box s-white"> This is what longer button will look like! </button>
+		<br><br>
+		<button class="submit-box-image s-blue"> <img src="files/button_icons/star.png"> This is a much longer button and contains more information and also an image! </button>
+		<br><br>
+		<hr class="hr-full">
+		<p class="title" id="lists">Lists</p>
+		<p class="sub-title">A range of basic lists</p>
+		<ol>
+			<li>@ Character<br>
+				<ul class="list-char-1">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</li><br>
+			<li>- Character<br>
+				<ul class="list-char-2">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</li><br>
+			<li>* Character<br>
+				<ul class="list-char-3">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</li><br>
+			<li># Character<br>
+				<ul class="list-char-4">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</li><br>
+			<li>Block<br>
+				<ul class="list-block">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</li><br>
+			<li>Inline Block<br>
+				<ul class="list-inline-block">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</li><br>
+			<li>Margined No Style<br>
+				<ul class="list-none">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</li><br>
+			<li>Non-Margined No Style<br>
+				<ul class="list-no-style">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</li><br>
+		</ol>
+		<hr class="hr-full">
+		<p class="title"  id="typography">Typography</p>
+		<p class="sub-title">A range of basic typography</p>
+		<ol>
+			<li>Text Alignment<br>
+				<p class="text-left">This is at the left</p>
+				<p class="text-center">This is at the center</p>
+				<p class="text-right">This is at the right</p>
+			</li>
+			<li>Text Color<br>
+				<p class="text-red">This is red</p>
+				<p class="text-green">This is green</p>
+				<p class="text-blue">This is blue</p>
+				<p class="text-silver">This is silver</p>
+				<p class="text-gold">This is gold</p>
+			</li>
+			<li>Special Texts<br>
+				<p class="quote">This is a quote</p>
+				<div class="code" disabled>
+					&lt;!DOCTYPE html&gt;<br />
+					&lt;html&gt;<br />
+					&lt;body&gt;<br />
+					<br />
+					&lt;h2&gt;The &amp;lt;blockquote&amp;gt; tag&lt;/h2&gt;<br />
+					&lt;p&gt;The &amp;lt;blockquote&amp;gt; tag specifies a section that is quoted from another source.&lt;/p&gt;<br />
+					&lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;<br />
+					&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;<br />
+					For 50 years, WWF has been protecting the future of nature. The world�s leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.<br />
+					&lt;/blockquote&gt;<br />
+					&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Browsers usually indent &amp;lt;blockquote&amp;gt; elements.&lt;/p&gt;<br />
+					<br />
+					&lt;h2&gt;The &amp;lt;q&amp;gt; tag&lt;/h2&gt;<br />
+					&lt;p&gt;The &amp;lt;q&amp;gt; tag defines a short quotation.&lt;/p&gt;<br />
+					<br />
+					&lt;p&gt;WWF's goal is to: <br />
+					&lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;<br />
+					We hope they succeed.&lt;/p&gt;<br />
+					&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Browsers insert quotation marks around the &amp;lt;q&amp;gt; tag.&lt;/p&gt;<br />
+					<br />
+					&lt;/body&gt;<br />
+					&lt;/html&gt;
+				</div><br>
+			</li>
+			<li>Text Shadow<br><br>
+				<div style="text-align:center;font-size:50px;font-weight:bolder;background:#01a2e8;color:#fff;padding:15px;border-radius:4px;width:92%;box-shadow:inset 0px 0px 200px rgba(0,0,0,0.2);">
+					<p class="close-and-heavy">Close And Heavy</p>
+					<p class="three-d-text">3D</p>
+					<p class="soft-emboss">Soft Emboss</p>
+					<p class="down-and-distant">Down and Distant</p>
+					<p class="multiple-light-sources">Multiple Light Sources</p>
+				</div>
+			</li>
+		</ol><br>
+
+		<hr class="hr-full">
+		<p class="title" id="tables">Tables</p>
+		<p class="sub-title">A range of table designs</p>
+		<table class="t-basic" >
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 2</td>
+			</tr>
+			<tr>
+				<td>Data 3</td>
+				<td>Data 4</td>
+			</tr>
+		</table><br>
+		<table class="t-standard">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 2</td>
+			</tr>
+			<tr>
+				<td>Data 3</td>
+				<td>Data 4</td>
+			</tr>
+		</table><br>
+		<table class="t-modern">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 2</td>
+			</tr>
+			<tr>
+				<td>Data 3</td>
+				<td>Data 4</td>
+			</tr>
+		</table><br>
+		<table class="t-none">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 2</td>
+			</tr>
+			<tr>
+				<td>Data 3</td>
+				<td>Data 4</td>
+			</tr>
+		</table><br>
+		<table class="t-style-1 shadow-semi-light">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 2</td>
+			</tr>
+			<tr>
+				<td>Data 3</td>
+				<td>Data 4</td>
+			</tr>
+		</table><br>
+		<table class="t-style-2 shadow-semi-light">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 2</td>
+			</tr>
+			<tr>
+				<td>Data 3</td>
+				<td>Data 4</td>
+			</tr>
+		</table><br>
+		<table class="t-style-3 shadow-semi-light">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 2</td>
+			</tr>
+			<tr>
+				<td>Data 3</td>
+				<td>Data 4</td>
+			</tr>
+		</table><br>
+		<hr class="hr-full">
+		<p class="title" id="hr">Horizontal Lines</p>
+		<p class="sub-title">A range of hr designs</p>
+		<hr class="hr-normal"><br>
+		<hr class="hr-gradient-01"><br>
+		<hr class="hr-gradient-02"><br>
+		<hr class="hr-dashed"><br>
+		<hr class="hr-classy"><br>
+		<hr class="hr-full">
+		<p class="title" id="animations">Animations</p>
+		<p class="sub-title">A range of hover animations</p>
+		<div class="user-select-none">
+			<span class="box-sample shadow-semi-light transition-move-right">Move Right</span>
+			<span class="box-sample shadow-semi-light transition-move-left">Move Left</span>
+			<span class="box-sample shadow-semi-light transition-move-up">Move Up</span>
+			<span class="box-sample shadow-semi-light transition-move-down">Move Down</span>
+			<span class="box-sample shadow-semi-light transition-scale-up">Scale Up</span>
+			<span class="box-sample shadow-semi-light transition-scale-down">Scale Down</span>
+		</div><br>
+		<hr class="hr-full">
+		<p class="title" id="alerts">Alerts and Notifications</p>
+		<p class="sub-title">A range of notifications</p>
+		<div class="alert shadow-medium">Alert!</div><br><br>
+		<div class="success shadow-medium">Successful!</div><br><br>
+		<div class="notification shadow-medium">Notification!</div><br><br>
+		<div class="popup-right">This is a popup to the right!</div><br><br>
+		<div class="popup-left">This is a popup to the left!</div><br>
+		<span class="mozilla-text">Arrows didn't work well in Firefox</span>
+		<button class="submit-box s-white" onclick="popupfn();"> Click To Popup </button><br>
+		<hr class="hr-full">
+		<p class="title" id="images">Images</p>
+		<p class="sub-title">A range of imaging designs</p>
+		<center>
+			<div class="img-box-style">
+				<img class="img-box" src="files/img1.jpg"/>
+				<p>Caption Here</p>
+			</div><br>
+			<img class="img-box" src="files/img2.jpg"/>
+			<p class="caption-type1">Caption Here</p>
+			<img class="img-box" src="files/img3.jpg"/>
+			<p class="caption-type2">Caption Here</p>
+			<img class="img-box photo-style" src="files/img4.jpg"/>
+			<p class="caption-type2 cap-margin-top">Caption Here</p><br>
+			<div class="polaroid">
+				<img class="img-box"src="files/img5.jpg"/>
+				<p>Caption Here</p>
+			</div><br>
+		</center><br>
+		<hr class="hr-full">
+		<p class="title" id="progress">Progress Bar</p>
+		<p class="sub-title">A range of progress bar designs</p>
+		<div class="progress">
+			<div class="progress-bar progress-bar-blue" style="width: 20%"></div>
+		</div><br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-red" style="width: 40%"></div>
+		</div><br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-green" style="width: 60%"></div>
+		</div><br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-gold" style="width: 80%"></div>
+		</div><br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-silver" style="width: 100%"></div>
+		</div><br>
+		<div class="progress" style="height:20px">
+			<div class="progress-bar progress-bar-blue" style="width: 25%"></div>
+		</div><br>
+		<div class="progress" style="height:10px">
+			<div class="progress-bar progress-bar-red" style="width: 50%"></div>
+		</div><br>
+		<hr class="hr-full">
+		<p class="title" id="social">Social Icons</p>
+		<p class="sub-title">A range of social media icons</p>
+		<a href="#" class="link-button-01"><img src="files/social_icons/facebook.png"></a>
+		<a href="#" class="link-button-01"><img src="files/social_icons/twitter.png"></a>
+		<a href="#" class="link-button-01"><img src="files/social_icons/reddit.png"></a>
+		<a href="#" class="link-button-01"><img src="files/social_icons/flickr.png"></a>
+		<a href="#" class="link-button-01"><img src="files/social_icons/deviantart.png"></a>
+		<a href="#" class="link-button-01"><img src="files/social_icons/delicious.png"></a>
+		<a href="#" class="link-button-01"><img src="files/social_icons/rss.png"></a>
+		<a href="#" class="link-button-01"><img src="files/social_icons/tumblr.png"></a><br>
+		Smaller<br><br>
+		<div class="smaller">
+			<a href="#" class="link-button-01"><img src="files/social_icons/facebook.png"></a>
+			<a href="#" class="link-button-01"><img src="files/social_icons/twitter.png"></a>
+			<a href="#" class="link-button-01"><img src="files/social_icons/reddit.png"></a>
+			<a href="#" class="link-button-01"><img src="files/social_icons/flickr.png"></a>
+			<a href="#" class="link-button-01"><img src="files/social_icons/deviantart.png"></a>
+			<a href="#" class="link-button-01"><img src="files/social_icons/delicious.png"></a>
+			<a href="#" class="link-button-01"><img src="files/social_icons/rss.png"></a>
+			<a href="#" class="link-button-01"><img src="files/social_icons/tumblr.png"></a><br>
+		</div>
+	</div>
+	<div id="footer" class="footer">
+		<div id="footer-contents">
+			Designed By Nishan Bajracharya
+		</div>
+	</div>
+</body>
+</html>
